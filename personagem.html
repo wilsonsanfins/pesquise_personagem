@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Search</title>
+    <link rel="stylesheet" href="personagem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>Pesquise</h1>
+        <form onsubmit="event.preventDefault(); searchCharacters()">
+            <label for="characterName">Digite um personagem :</label>
+            <input type="text" id="characterName" placeholder="Exemplo Rick Sanchez" required>
+            <button type="submit">Procurar</button>
+        </form>
+        <div id="characterList"></div>
+    </div>   
+    <div class="theme-switch">
+        <input type="checkbox" id="themeSwitch">
+        <label for="themeSwitch">Modo escuro</label>
+    </div>
+    <footer>
+        <h3>Séries possiveis:</h3>
+        <ul>
+            <li>Rick and Morty</li>
+            <li>Star Wars</li>
+            <li>Pokemon</li>
+        </ul>
+        <p>&copy;2024 direitos de Wilson Sanfins</p>
+    </footer>
+    <script src="personagem.js"></script>
+</body>
+</html>
